@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <form action="/action_page.php">
         <label for="side_a">a:</label><br>
@@ -21,15 +23,16 @@
 
     <form action="/action_page.php">
         <label for="m_value">m:</label><br>
-        <input type="text" id="side_a" name="a" value="0"><br>
+        <input type="text" id="M" name="M" value="0"><br>
         <label for="n_value">n:</label><br>
-        <input type="text" id="side_b" name="b" value="0"><br>
+        <input type="text" id="N" name="N" value="0"><br>
         <label for="AsymptoteType">AsymptoteType:</label><br>
         <input type="text" id="AsymptoteType" name="AsymptoteType" value="0" readonly> <br>
-        <input type="button" onclick="Asymptote()" value="Calculate">
+        <input type="button" onclick="calculateAsymptote()" value="Calculate">
     </form>
 
     <script src="script.js"></script>
     </script>
 </body>
+
 </html>
