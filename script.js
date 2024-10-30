@@ -52,9 +52,6 @@ function calculateAsymptote() {
                 break;
             case 10:
                 result = "The asymptote is Decic";
-                break;
-            default:
-                result = "The asymptote is a higher degree polynomial";
         }
     }
 
