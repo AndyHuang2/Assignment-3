@@ -9,39 +9,40 @@
 </head>
 
 <body>
-    <form action="/action_page.php">
-        <h1>Cos law</h1>
-        <label for="side_a">a:</label><br>
-        <input type="text" id="side_a" name="a" value="0"><br>
-        <label for="side_b">b:</label><br>
-        <input type="text" id="side_b" name="b" value="0"><br>
-        <label for="Angle">C:</label><br>
-        <input type="text" id="Angle" name="angle" value="0"><br>
-        <label for="c_length">c:</label><br>
-        <input type="text" id="c_length" name="c" value="0" readonly> <br>
-        <input type="button" onclick="Coslaw()" value="Calculate">
-    </form>
+    <div class="calculator-container">
+        <form action="/action_page.php">
+            <h1>Cos law</h1>
+            <label for="side_a">a:</label><br>
+            <input type="text" id="side_a" name="a" value="0"><br>
+            <label for="side_b">b:</label><br>
+            <input type="text" id="side_b" name="b" value="0"><br>
+            <label for="Angle">C:</label><br>
+            <input type="text" id="Angle" name="angle" value="0"><br>
+            <label for="c_length">c:</label><br>
+            <input type="text" id="c_length" name="c" value="0" readonly> <br>
+            <input type="button" onclick="Coslaw()" value="Calculate">
+        </form>
 
-    <form action="/action_page.php">
-        <h1>Asymptote calculator</h1>
-        <label for="m_value">m:</label><br>
-        <input type="text" id="M" name="M" value="0"><br>
-        <label for="n_value">n:</label><br>
-        <input type="text" id="N" name="N" value="0"><br>
-        <label for="AsymptoteType">AsymptoteType:</label><br>
-        <input type="text" id="AsymptoteType" name="AsymptoteType" value="0" readonly> <br>
-        <input type="button" onclick="calculateAsymptote()" value="Calculate">
-    </form>
+        <form action="/action_page.php">
+            <h1>Asymptote calculator</h1>
+            <label for="m_value">m:</label><br>
+            <input type="text" id="M" name="M" value="0"><br>
+            <label for="n_value">n:</label><br>
+            <input type="text" id="N" name="N" value="0"><br>
+            <label for="AsymptoteType">AsymptoteType:</label><br>
+            <input type="text" id="AsymptoteType" name="AsymptoteType" value="0" readonly> <br>
+            <input type="button" onclick="calculateAsymptote()" value="Calculate">
+        </form>
 
-    <form action="/action_page.php">
-        <h1>Pi Approximation</h1>
-        <label for="n_value">n:</label><br>
-        <input type="text" id="n_value" name="n_value" value="0"><br>
-        <label for="PiApproximation">PiApproximation:</label><br>
-        <input type="text" id="PiApproximation" name="PiApproximation" value="0" readonly> <br>
-        <input type="button" onclick="calculatePi()" value="Calculate">
-    </form>
-
+        <form action="/action_page.php">
+            <h1>Pi Approximation</h1>
+            <label for="n_value">n:</label><br>
+            <input type="text" id="n_value" name="n_value" value="0"><br>
+            <label for="PiApproximation">PiApproximation:</label><br>
+            <input type="text" id="PiApproximation" name="PiApproximation" value="0" readonly> <br>
+            <input type="button" onclick="calculatePi()" value="Calculate">
+        </form>
+    </div>
     <script src="script.js"></script>
     </script>
 </body>

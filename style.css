@@ -1,67 +1,74 @@
-h1 {
-    color:#ffffff
-}
-form {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
-form {
-    background: #524e4e;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    height: 600px;
-    width: 450px;
-}
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #ffffff;
-}
+        .calculator-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 800px;
+            width: 100%;
+        }
 
-input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    transition: border 0.3s;
-}
+        form {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            padding: 20px;
+            height: 600px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+        }
 
-input[type="text"]:focus {
-    border: 1px solid #007bff;
-    outline: none;
-}
+        h1 {
+            font-size: 1.5em;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-align: center;
+        }
 
-input[type="button"] {
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    width: 100%;
-}
+        label {
+            font-weight: bold;
+            color: #aaaaaa;
+            margin-top: 10px;
+        }
 
-input[type="button"]:hover {
-    background-color: #0056b3;
-}
+        input[type="text"] {
+            background-color: #333;
+            color: #ffffff;
+            border: 1px solid #444;
+            border-radius: 4px;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
 
-form+form {
-    margin-top: 20px;
-}
+        input[type="button"] {
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        input[type="button"]:hover {
+            background-color: #0056b3;
+        }
